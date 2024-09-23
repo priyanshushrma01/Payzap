@@ -10,9 +10,9 @@ export const Balance = ()=>{
             }
         })
             .then(res=>{
-                setVal(res.data.balance.toFixed(2))
+                setVal(res.data.balance.toFixed(2));
             })
-    },[val]);
+    });
     return <div className="flex">
         <div className="font-bold text-lg">
         Your Balance
