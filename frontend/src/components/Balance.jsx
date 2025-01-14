@@ -4,7 +4,7 @@ import axios from "axios"
 export const Balance = ()=>{
     const [val,setVal] = useState(null);
     useEffect(()=>{
-        axios.get('https://payzap-theta.vercel.app/api/v1/account/balance',{
+        axios.get('https://payzap.vercel.app/api/v1/account/balance',{
             headers:{
                 Authorization:'Bearer '+localStorage.getItem("token")
             }

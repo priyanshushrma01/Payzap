@@ -44,7 +44,7 @@ export const SendMoney = () => {
                         />
                         </div>
                             <button onClick={()=>{
-                                axios.post("https://payzap-theta.vercel.app/api/v1/account/transfer",{
+                                axios.post("https://payzap.vercel.app/api/v1/account/transfer",{
                                     to:id,
                                     amount
                                 },{
