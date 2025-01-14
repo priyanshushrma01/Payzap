@@ -5,7 +5,7 @@ const cors = require("cors");
 
 app.use(express.json());
 app.use(cors({
-    origin:["https://payzap.vercel.app/"],
+    origin:["https://payzap-jtn5.vercel.app"],
     methods:["POST","GET"],
     credentials:true
 
