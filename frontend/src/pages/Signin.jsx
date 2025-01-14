@@ -27,6 +27,7 @@ export const Signin = ()=>{
                             username,
                             password
                         })
+                        navigate("/dashboard");
                     }} label={"Sign in"}/>
                 </div>
                 
