@@ -27,6 +27,7 @@ export const Signin = ()=>{
                             username,
                             password
                         })
+                        localStorage.setItem("token",response.data.token)//key-value
                         navigate("/dashboard");
                     }} label={"Sign in"}/>
                 </div>
