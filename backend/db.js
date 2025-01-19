@@ -1,7 +1,15 @@
 // backend/db.js
 const mongoose = require('mongoose');
+const dotenv = require('dotenv')
+dotenv.config();
 
-mongoose.connect('mongodb+srv://admin:YH5KM2DgtgD8q0Hd@cluster0.qjeoqfv.mongodb.net/paytm');
+mongoose.connect(process.env.DATABASE_URL)
+    .then(() => {
+        console.log('Connected to MongoDB');
+    })
+    .catch((error) => {
+        console.error('Error connecting to MongoDB:', error);
+    });
 
 // Create a Schema for Users
 const userSchema = new mongoose.Schema({
